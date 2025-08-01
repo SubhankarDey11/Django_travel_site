@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-eblvm+gmgm#z5(&elmhp$)wco-e*+ss#k3ef(3wie=#j#$sm6@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']  # Change this to your domain in production
+ALLOWED_HOSTS = ['your-subdomain.onrender.com']  # Change this to your domain in production
 
 
 # Application definition
