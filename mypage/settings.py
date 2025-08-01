@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eblvm+gmgm#z5(&elmhp$)wco-e*+ss#k3ef(3wie=#j#$sm6@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-subdomain.onrender.com']  # Change this to your domain in production
+ALLOWED_HOSTS = ['django-travel-site.onrender.com   ']  # Change this to your domain in production
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'mypage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
