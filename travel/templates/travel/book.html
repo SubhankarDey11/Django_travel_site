@@ -1,0 +1,14 @@
+<h1>Book Your Trip</h1>
+<form method="POST">
+  {% csrf_token %}
+  Name: <input type="text" name="name"><br>
+  Email: <input type="email" name="email"><br>
+  Destination:
+  <select name="destination">
+    {% for dest in dests %}
+      <option value="{{ dest.id }}">{{ dest.name }}</option>
+    {% endfor %}
+  </select><br>
+  Date: <input type="date" name="date"><br>
+  <input type="submit" value="Book Now">
+</form>

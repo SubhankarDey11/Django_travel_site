@@ -1,0 +1,13 @@
+<h1>Popular Destinations</h1>
+{% for dest in dests %}
+  <div>
+    <img src="{{ dest.img.url }}" width="200">
+    <h3>{{ dest.name }}</h3>
+    <p>{{ dest.description }}</p>
+    <p>₹{{ dest.price }}</p>
+    {% if dest.offer %}
+      <p style="color:red">Special Offer!</p>
+    {% endif %}
+  </div>
+{% endfor %}
+<a href="/book/">Book Now</a>
